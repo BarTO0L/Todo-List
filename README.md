@@ -1,18 +1,31 @@
 # Todo-List
 Users can manage what to do...
 
+
+
 🚀 Özellikler
 
+
 ✅ Add new tasks
+
 ✅ Edit tasks (via prompt window)
+
 ✅ Mark tasks as completed
+
 ✅ Delete tasks (with fade-out animation)
+
 ✅ Persistent storage with LocalStorage
+
 ✅ Tasks reload automatically after refresh
+
 ✅ Font Awesome icon support
+
 ✅ Clean and responsive design with CSS animations
 
+
+
 🧠 Kullanılan Teknolojiler
+
 
 HTML5 – Structure of the page
 
@@ -23,6 +36,8 @@ JavaScript (ES6) – Dynamic interactions and logic
 LocalStorage – Data persistence in the browser
 
 Font Awesome – For icons and visual feedback
+
+
 
 📘 Geliştirici Notu
 
