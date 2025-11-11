@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+:root {
+    --primary-color: #64631c;
+    --secondary-color: #1805bf;
+}
+
+body {
+    font-family: 'Stack Sans Nocth', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(20deg,
+            var(--secondary-color),
+            var(--primary-color));
+}
+
+.container {
+    width: 700px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 65px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+input[type="text"] {
+    padding: 10px;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+button {
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    border: 2px solid black;
+    transition: 350ms;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 2px;
+
+
+}
+
+i {
+    margin: 5px;
+    font-size: 30px;
+}
+
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: fadeIn 0.5s ease;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+span {
+    flex: 1;
+    white-space: nowrap;
+    font-size: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.completed span {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+
+.completed button {
+    color: rgb(233, 30, 30);
+}
+
+@keyframes fadeIn {
+    from {
+        tansform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
